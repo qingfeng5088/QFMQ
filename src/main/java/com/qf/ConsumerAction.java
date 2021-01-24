@@ -31,9 +31,7 @@ public class ConsumerAction {
     public void execute(Object event) {
         try {
             method.invoke(target, event);
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-        } catch (InvocationTargetException e) {
+        } catch (IllegalAccessException | InvocationTargetException e) {
             e.printStackTrace();
         }
     }

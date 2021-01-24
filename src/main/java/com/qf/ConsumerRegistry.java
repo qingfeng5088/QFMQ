@@ -49,7 +49,6 @@ public class ConsumerRegistry {
 
     private List<Method> getAnnotatedMethods(  Class<?> clazz) {
         List<Method> annotatedMethods = new ArrayList<>();
-
         Method[] ms = clazz.getMethods();
         for (Method m : ms) {
             Annotation[] annotations = m.getAnnotations();
